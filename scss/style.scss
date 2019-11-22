@@ -1,10 +1,36 @@
 @import './reset.scss';
 
+@font-face {
+    font-family: "CodePro-Light";
+    src: url(../fonts/Source_Code_Pro/SourceCodePro-Light.ttf) format("truetype");
+    font-weight: 300;
+}
 
 header {
-    background-color: aqua;
-    h1 {
-        color: blue;
-        font-size: 40px;
+    background-color: #F6F6F6;
+    img {
+        width: 100%;
+        max-width: 4.25rem;
+        height: auto;
+    }
+    .navbar-toggler {
+        border: 0.125rem solid;
+        border-color: rgba(0,0,0,1);
+    }
+    .navbar-style {
+        text-align: center;
+        z-index: 1;
+        .nav-item {
+            margin-bottom: 3%;
+            font-family: "CodePro-Light", monospace;
+            font-size: 1rem;
+            text-transform: uppercase;
+            &:hover {
+                background-color: #FFFF00;
+            }
+            .active {
+                background-color: #FFFF00; 
+            }
+        }
     }
 }
