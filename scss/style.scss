@@ -45,8 +45,8 @@ header {
     .carousel-indicators {
         margin-bottom: 2%;
         li{
-            width: 15px;
-            height: 15px;
+            width: 8px;
+            height: 8px;
             border: 2px solid #000;
             background-color: #000;
             opacity: 1;
@@ -134,7 +134,7 @@ header {
     p {
         padding: 5% 5%;
         font-family: "Century Gothic";
-        font-size: 10px;
+        font-size: 15px;
         text-align: center;
     }
     .section-box {
@@ -182,7 +182,7 @@ header {
                 padding: 2%;
                 text-align: left;
                 font-family: "Code-Light";
-                font-size: 20px;
+                font-size: 16px;
                 text-transform: uppercase;
             }
             .author{
@@ -207,3 +207,166 @@ header {
         }
     }
 }
+
+.portfolio {
+    margin: 5% 0;
+    .description-section {
+        padding: 8% 0;
+        font-family: "Century Gothic";
+        font-size: 13px;
+        text-align: center;
+    }
+    .head-wrapper {
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: center;
+        font: 1.6em/1.1 Georgia;
+        padding: .2em 0;
+        text-shadow: 0 1px rgba(255,255,255,.6);
+        .head-section {
+            display: inline-block;
+            padding: 0 14px 2px;
+            font-family: "Century Gothic";
+            font-size: 13px;
+            text-transform: uppercase;
+            background: #414146;
+            color: #FFFF00;
+        }
+        &:after, 
+        &:before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            height: 2px;
+            vertical-align: middle;
+            background: #000;
+            background-clip: content-box;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+        }
+        &:after {
+            left: .5em;
+            margin: 0 -50% 0 0;
+        }
+        &:before {
+            left: -.5em;
+            margin: 0 0 0 -50%;
+        }
+    }
+    .grid {
+        width: 100%;
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .grid-sizer,
+        .grid-item {
+            // width: 224.8px;
+            width: 300px;
+            margin: 2% 3%;
+        }
+        .grid-item {
+            height: 275px;
+            float: left;
+            background: #D26;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .grid-item--width2 { width: 300px;}
+        /* .grid-item--width2 { width:  449px; }
+        .grid-item--height2 { height: 400px * 0.75; }
+        .grid-item--height3 { height: 200px * 0.75; }
+        .grid-item--height4 { height: 125px * 0.75; } */
+
+    }
+    
+}
+
+.client {
+    margin: 5% 0;
+    .description-section {
+        padding: 8% 0;
+        font-family: "Century Gothic";
+        font-size: 13px;
+        text-align: center;
+    }
+    .head-wrapper {
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: center;
+        font: 1.6em/1.1 Georgia;
+        padding: .2em 0;
+        text-shadow: 0 1px rgba(255,255,255,.6);
+        .head-section {
+            display: inline-block;
+            padding: 0 14px 2px;
+            font-family: "Century Gothic";
+            font-size: 13px;
+            text-transform: uppercase;
+            background: #414146;
+            color: #FFFF00;
+        }
+        &:after, 
+        &:before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            height: 2px;
+            vertical-align: middle;
+            background: #000;
+            background-clip: content-box;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+        }
+        &:after {
+            left: .5em;
+            margin: 0 -50% 0 0;
+        }
+        &:before {
+            left: -.5em;
+            margin: 0 0 0 -50%;
+        }
+    }
+    .owl-carousel {
+        & img {
+            width: 40%;
+            margin: 0 auto; 
+        }
+        &.owl-loaded {
+            position: relative; 
+            .owl-prev {
+                position: absolute;
+                top: 4%;
+                left: 0;
+                height: 40px;
+                width: 39px;
+                background-color: #000;
+                background-image: url(../img/arrow-left.PNG);
+                background-size: 28% auto;
+                background-position: center;
+                background-repeat: no-repeat;
+                    
+                
+            }
+            .owl-next {
+                position: absolute;
+                top: 4%;
+                left: 88%;
+                height: 40px;
+                width: 39px;
+                background-color: #000;
+                background-image: url(../img/arrow-right.PNG);
+                background-size: 28% auto;
+                background-position: center;
+                background-repeat: no-repeat;
+                
+            }
+
+        }
+    } 
+}
+
