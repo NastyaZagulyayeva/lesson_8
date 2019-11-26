@@ -325,10 +325,23 @@ textarea {
   padding: 0.2em 0; }
 
 @font-face {
-  font-family: "Code-Light";
-  src: url(../fonts/CODE_Light.ttf) format("truetype");
-  font-weight: 300;
-  font-style: normal; }
+  font-family: Code;
+  src: url(../fonts/CODE_Light.ttf) format("truetype"), url(../fonts/CODE_Light.otf) format("opentype");
+  font-weight: normal; }
+
+@font-face {
+  font-family: Code;
+  src: url(../fonts/CODE_Bold.otf) format("opentype");
+  font-weight: bold; }
+
+a:focus {
+  outline: none; }
+
+body,
+section,
+header,
+nav {
+  background-color: #f6f6f6; }
 
 header {
   background-color: #F6F6F6; }
@@ -336,6 +349,9 @@ header {
     width: 75px;
     max-width: 112px;
     height: auto; }
+  header .navbar {
+    padding-left: 8%;
+    padding-right: 8%; }
   header .navbar-toggler {
     border: 2px solid;
     border-color: black; }
@@ -344,13 +360,23 @@ header {
     z-index: 1; }
     header .navbar-style .nav-item {
       margin-bottom: 3%;
-      font-family: "CodePro-Light", monospace;
-      font-size: 16px;
-      text-transform: uppercase; }
+      font-family: Code, monospace;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 700; }
       header .navbar-style .nav-item:hover {
         background-color: #FFFF00; }
-      header .navbar-style .nav-item .active {
+      header .navbar-style .nav-item.active {
         background-color: #FFFF00; }
+  @media (min-width: 992px) {
+    header .navbar-style .nav-item {
+      padding: 20px 6px;
+      margin: 0 14px; }
+      header .navbar-style .nav-item .nav-link {
+        padding: 0; } }
+
+section + section {
+  margin-top: 50px; }
 
 .slider {
   max-height: fit-content;
@@ -368,21 +394,25 @@ header {
       .slider .carousel-indicators li.active {
         background-color: #FFEA00; }
   .slider .carousel-item .margin .text-wrpper {
-    padding: 15% 0 5%; }
+    padding: 15% 0 5%;
+    text-align: center; }
     .slider .carousel-item .margin .text-wrpper h2 {
-      display: inline;
+      display: block;
       font-family: "Century Gothic";
       font-size: 38px;
       text-transform: uppercase;
       line-height: 1.3;
-      background-color: #FFFF00; }
+      margin-bottom: 4px; }
+      .slider .carousel-item .margin .text-wrpper h2 .highlight {
+        background-color: #FFFF00; }
     .slider .carousel-item .margin .text-wrpper p {
-      display: inline;
+      display: block;
       font-family: "Century Gothic";
       font-size: 15px;
       line-height: 1.3;
-      color: #FFF;
-      background-color: #414146; }
+      color: #FFF; }
+      .slider .carousel-item .margin .text-wrpper p .highlight {
+        background-color: #414146; }
   .slider .carousel-item .margin .padding-colum {
     padding-bottom: 10%;
     padding-top: 5%; }
@@ -393,6 +423,30 @@ header {
       flex: 0 0 25%; }
     .slider .carousel-item .margin .padding-colum .last-image {
       margin-right: 25%; }
+  @media (min-width: 768px) {
+    .slider .carousel-item .margin .text-wrpper {
+      text-align: left;
+      padding: 20% 0 5%; }
+      .slider .carousel-item .margin .text-wrpper p {
+        max-width: 234px; }
+    .slider .carousel-item .margin .btn-link-block {
+      justify-content: flex-end;
+      padding: 20px; } }
+  @media (min-width: 992px) {
+    .slider .carousel-item .margin .text-wrpper h2 {
+      font-size: 50px;
+      overflow: unset;
+      white-space: unset; }
+    .slider .carousel-item .margin .text-wrpper p {
+      font-size: 18px;
+      max-width: 282px; } }
+  @media (min-width: 1200px) {
+    .slider .carousel-item .margin .text-wrpper {
+      width: fit-content;
+      margin-left: auto;
+      padding: 22% 0 5%; }
+      .slider .carousel-item .margin .text-wrpper h2 {
+        font-size: 54px; } }
 
 .carousel-control-next, .carousel-control-prev {
   opacity: 1; }
@@ -415,188 +469,205 @@ header {
     background-image: url(../img/arrow-left.PNG);
     background-size: auto; }
 
-#content h2 {
-  padding-top: 10%;
+.btn-link-block {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.btn-link {
+  display: inline-block;
   font-family: "Century Gothic";
-  font-size: 20px;
+  color: #fff;
+  background-color: black;
+  padding: 6px 16px;
+  border-bottom: 2px solid black; }
+  .btn-link:hover, .btn-link:active, .btn-link:focus {
+    border-bottom-color: #FFFF00;
+    color: #fff;
+    text-decoration: none;
+    outline: none; }
+
+#content h2 {
+  font-family: "Century Gothic";
+  font-size: 24px;
   text-transform: uppercase;
   text-align: center; }
 
 #content p {
-  padding: 5% 5%;
+  padding: 20px;
   font-family: "Century Gothic";
-  font-size: 15px;
+  font-size: 16px;
   text-align: center; }
 
 #content .section-box {
-  height: 220px;
-  width: 220px;
-  margin: 5% auto;
-  background: radial-gradient(#6e6e6e, #2f2f2f);
-  background: -webkit-radial-gradient(#6e6e6e, #2f2f2f);
-  background: -moz-radial-gradient(#6e6e6e, #2f2f2f);
-  color: #fff;
+  max-height: 280px;
+  max-width: 250px;
+  color: #414146;
+  background-color: #414146;
   position: relative;
-  overflow: hidden; }
-  #content .section-box.redesigning {
-    background-color: #FFEA00;
-    background-image: url(../img/content-2.PNG);
+  overflow: hidden;
+  margin: 8px auto;
+  cursor: pointer; }
+  #content .section-box h4 {
+    text-align: left;
+    font-family: Code;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 8px; }
+  #content .section-box .box-header {
+    background-color: #FFFF00;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; }
-  #content .section-box.web-development {
-    background-color: #FFEA00;
-    background-image: url(../img/content-2.PNG);
-    background-position: center;
-    background-repeat: no-repeat; }
-  #content .section-box.web-design {
-    background-color: #FFEA00;
-    background-image: url(../img/content-3.PNG);
-    background-position: center;
-    background-repeat: no-repeat; }
-  #content .section-box.graphic {
-    background-color: #FFEA00;
-    background-image: url(../img/content-4.PNG);
-    background-position: center;
-    background-repeat: no-repeat; }
-  #content .section-box figure {
-    position: absolute;
-    width: 100%;
-    bottom: -117%;
-    transition: ease-in-out .5s;
-    background: rgba(0, 0, 0, 0.9); }
-    #content .section-box figure p {
-      padding: 2%;
-      text-align: left;
-      font-family: "Code-Light";
-      font-size: 16px;
-      text-transform: uppercase; }
-    #content .section-box figure .author {
-      padding: 3%;
-      text-align: right;
-      font-family: "Century Gothic";
-      font-size: 10px; }
-      #content .section-box figure .author span {
-        color: #FFEA00; }
-    #content .section-box figure img {
-      height: 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 250px;
+    position: relative; }
+    #content .section-box .box-header-overlay {
       width: 100%;
-      object-fit: cover; }
-  #content .section-box:hover figure {
-    bottom: 0; }
+      height: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      #content .section-box .box-header-overlay img {
+        height: 100px;
+        margin-top: 35px; }
+      #content .section-box .box-header-overlay figcaption {
+        font-family: Code;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 600;
+        padding: 8px 0; }
+  #content .section-box .box-footer {
+    height: 80px;
+    width: 250px;
+    max-height: 80px;
+    color: #fff;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #content .section-box .box-footer p {
+      padding: 0;
+      font-size: 14px; }
+    #content .section-box .box-footer.special {
+      position: relative; }
+      #content .section-box .box-footer.special:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 15px;
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-bottom-color: #414146;
+        border-top: 0;
+        margin-left: -8px;
+        margin-top: -8px; }
+      #content .section-box .box-footer.special .author {
+        padding: 0;
+        text-align: right;
+        font-family: "Century Gothic";
+        font-size: 10px; }
+        #content .section-box .box-footer.special .author span {
+          color: #FFEA00; }
 
-.portfolio {
-  margin: 5% 0; }
-  .portfolio .description-section {
-    padding: 8% 0;
+section .description-section {
+  padding: 30px 0;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  text-align: center; }
+
+section .head-wrapper {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  font: 1.6em/1.1 Georgia;
+  padding: .2em 0;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6); }
+  section .head-wrapper .head-section {
+    text-transform: uppercase;
+    display: inline-block;
     font-family: "Century Gothic";
-    font-size: 13px;
-    text-align: center; }
-  .portfolio .head-wrapper {
+    padding: 5px 20px;
+    font-size: 16px;
+    background: #414146;
+    color: #FFFF00; }
+  section .head-wrapper:after, section .head-wrapper:before {
+    content: "";
     position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    text-align: center;
-    font: 1.6em/1.1 Georgia;
-    padding: .2em 0;
-    text-shadow: 0 1px rgba(255, 255, 255, 0.6); }
-    .portfolio .head-wrapper .head-section {
-      display: inline-block;
-      padding: 0 14px 2px;
-      font-family: "Century Gothic";
-      font-size: 13px;
-      text-transform: uppercase;
-      background: #414146;
-      color: #FFFF00; }
-    .portfolio .head-wrapper:after, .portfolio .head-wrapper:before {
-      content: "";
-      position: relative;
-      display: inline-block;
-      width: 50%;
-      height: 2px;
-      vertical-align: middle;
-      background: #000;
-      background-clip: content-box;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
-    .portfolio .head-wrapper:after {
-      left: .5em;
-      margin: 0 -50% 0 0; }
-    .portfolio .head-wrapper:before {
-      left: -.5em;
-      margin: 0 0 0 -50%; }
-  .portfolio .grid {
-    width: 100%;
-    /* .grid-item--width2 { width:  449px; }
-        .grid-item--height2 { height: 400px * 0.75; }
-        .grid-item--height3 { height: 200px * 0.75; }
-        .grid-item--height4 { height: 125px * 0.75; } */ }
-    .portfolio .grid::after {
-      content: '';
-      display: block;
-      clear: both; }
-    .portfolio .grid .grid-sizer,
-    .portfolio .grid .grid-item {
-      width: 300px;
-      margin: 2% 3%; }
-    .portfolio .grid .grid-item {
-      height: 275px;
-      float: left;
-      background: #D26;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #0000002e;
+    background-clip: content-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  section .head-wrapper:after {
+    left: .5em;
+    margin: 0 -50% 0 0; }
+  section .head-wrapper:before {
+    left: -.5em;
+    margin: 0 0 0 -50%; }
+
+.portfolio .description-section {
+  padding: 30px 0;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  text-align: center; }
+
+.portfolio .grid-container {
+  padding: 0; }
+  .portfolio .grid-container .row {
+    margin: 0; }
+
+.portfolio .grid {
+  width: 100%; }
+  .portfolio .grid::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .portfolio .grid .grid-item {
+    height: 90vw;
+    float: left;
+    background: #fff;
+    padding: 2px; }
+    .portfolio .grid .grid-item-img {
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center; }
-    .portfolio .grid .grid-item--width2 {
-      width: 300px; }
+      background-position: center;
+      width: 100%;
+      height: 100%; }
+  @media (min-width: 576px) {
+    .portfolio .grid .grid-item {
+      height: 275px; } }
+  @media (min-width: 768px) {
+    .portfolio .grid .grid-item {
+      height: 275px; }
+    .portfolio .grid .grid-item--height2 {
+      height: 300px; }
+    .portfolio .grid .grid-item--height3 {
+      height: 150px; }
+    .portfolio .grid .grid-item--height4 {
+      height: 93.75px; } }
 
-.client {
-  margin: 5% 0; }
-  .client .description-section {
-    padding: 8% 0;
-    font-family: "Century Gothic";
-    font-size: 13px;
-    text-align: center; }
-  .client .head-wrapper {
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    text-align: center;
-    font: 1.6em/1.1 Georgia;
-    padding: .2em 0;
-    text-shadow: 0 1px rgba(255, 255, 255, 0.6); }
-    .client .head-wrapper .head-section {
-      display: inline-block;
-      padding: 0 14px 2px;
-      font-family: "Century Gothic";
-      font-size: 13px;
-      text-transform: uppercase;
-      background: #414146;
-      color: #FFFF00; }
-    .client .head-wrapper:after, .client .head-wrapper:before {
-      content: "";
-      position: relative;
-      display: inline-block;
-      width: 50%;
-      height: 2px;
-      vertical-align: middle;
-      background: #000;
-      background-clip: content-box;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
-    .client .head-wrapper:after {
-      left: .5em;
-      margin: 0 -50% 0 0; }
-    .client .head-wrapper:before {
-      left: -.5em;
-      margin: 0 0 0 -50%; }
+.client .owl-carousel {
+  padding: 0 38px; }
   .client .owl-carousel img {
-    width: 40%;
+    width: 138px;
     margin: 0 auto; }
   .client .owl-carousel.owl-loaded {
     position: relative; }
     .client .owl-carousel.owl-loaded .owl-prev {
       position: absolute;
-      top: 4%;
+      top: 12px;
       left: 0;
-      height: 40px;
-      width: 39px;
+      height: 38px;
+      width: 38px;
       background-color: #000;
       background-image: url(../img/arrow-left.PNG);
       background-size: 28% auto;
@@ -604,12 +675,140 @@ header {
       background-repeat: no-repeat; }
     .client .owl-carousel.owl-loaded .owl-next {
       position: absolute;
-      top: 4%;
-      left: 88%;
-      height: 40px;
-      width: 39px;
+      top: 12px;
+      right: 0;
+      height: 38px;
+      width: 38px;
       background-color: #000;
       background-image: url(../img/arrow-right.PNG);
       background-size: 28% auto;
       background-position: center;
       background-repeat: no-repeat; }
+
+.icon-square {
+  background-color: #000;
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  min-height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  background-color: #414146;
+  margin-top: 30px; }
+  footer * {
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 16px; }
+  footer article {
+    padding: 30px 4px; }
+  footer a {
+    color: #FFFF00; }
+    footer a:hover, footer a:active, footer a:focus {
+      text-decoration: underline;
+      color: #FFFF00; }
+  footer h3 {
+    margin-bottom: 24px;
+    font-size: 24px; }
+  footer p,
+  footer address {
+    margin-bottom: 24px;
+    line-height: 24px; }
+  footer .summary-about-us .btn-link {
+    padding: 10px 20px; }
+  footer .summary-photo-stream .min-gallery {
+    max-width: 410px;
+    text-align: center;
+    margin: auto; }
+  footer .summary-latest-tweets p {
+    margin-bottom: 6px; }
+  footer .summary-latest-tweets li + li {
+    margin-top: 10px; }
+  footer .summary-latest-tweets .fa-ul {
+    margin-left: 50px; }
+  footer .summary-latest-tweets .fa-li {
+    left: -45px; }
+    footer .summary-latest-tweets .fa-li .fa {
+      font-size: 32px;
+      padding-right: 4px; }
+  footer .social-link:hover, footer .social-link:active, footer .social-link:focus {
+    text-decoration: none;
+    color: #FFFF00; }
+    footer .social-link:hover *, footer .social-link:active *, footer .social-link:focus * {
+      color: inherit; }
+  footer .summary-contact-us address {
+    display: flex;
+    align-items: center; }
+    footer .summary-contact-us address p {
+      margin: 0;
+      padding-left: 10px; }
+    footer .summary-contact-us address .top {
+      margin-right: 8px;
+      min-width: 58px; }
+    footer .summary-contact-us address .phone {
+      display: flex; }
+    footer .summary-contact-us address .email {
+      word-break: break-all; }
+  footer .summary-follow-us label {
+    margin-bottom: 20px; }
+  footer .summary-follow-us .follow-text {
+    border: none;
+    border-bottom: 2px solid #FFFF00;
+    outline: none;
+    background-color: transparent;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    color: #fff;
+    padding: 4px 5px;
+    width: 100%; }
+  footer .summary-follow-us button.icon-square {
+    box-shadow: none;
+    border: none;
+    outline: none; }
+    footer .summary-follow-us button.icon-square * {
+      color: inherit; }
+    footer .summary-follow-us button.icon-square:hover, footer .summary-follow-us button.icon-square:active, footer .summary-follow-us button.icon-square:focus {
+      box-shadow: none;
+      border: none;
+      outline: none;
+      color: #FFFF00; }
+  @media (min-width: 818px) {
+    footer .summary-info {
+      column-count: 2; }
+    footer article {
+      display: inline-block; } }
+  @media (min-width: 1200px) {
+    footer .summary-info {
+      column-count: 3; } }
+  footer .navbar {
+    background-color: #000;
+    color: #fff;
+    display: block; }
+    footer .navbar * {
+      color: #fff; }
+    footer .navbar p {
+      margin: 0; }
+    footer .navbar .copyright {
+      font-size: 12px;
+      margin: 0;
+      text-align: center; }
+    footer .navbar .navbar-nav .nav-item,
+    footer .navbar .navbar-nav .nav-link {
+      text-align: center;
+      font-family: Code;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 2px; }
+  @media (min-width: 992px) {
+    footer .navbar-expand-lg .navbar-nav {
+      justify-content: center; } }
+  @media (min-width: 1200px) {
+    footer .navbar-expand-lg {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 4%; }
+    footer .navbar-expand-lg .navbar-nav {
+      justify-content: right; } }
