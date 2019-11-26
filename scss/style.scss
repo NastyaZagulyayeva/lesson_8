@@ -43,6 +43,7 @@ header {
     background-size: cover;
     background-position: center;
     .carousel-indicators {
+        margin-bottom: 2%;
         li{
             width: 15px;
             height: 15px;
@@ -122,3 +123,87 @@ header {
     }
 }
 
+#content {
+    h2{
+        padding-top: 10%;
+        font-family: "Century Gothic";
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    p {
+        padding: 5% 5%;
+        font-family: "Century Gothic";
+        font-size: 10px;
+        text-align: center;
+    }
+    .section-box {
+        height: 220px;
+        width: 220px;
+        margin: 5% auto;
+        background: radial-gradient(#6e6e6e,#2f2f2f);
+        background: -webkit-radial-gradient(#6e6e6e,#2f2f2f);
+        background: -moz-radial-gradient(#6e6e6e,#2f2f2f);
+        color: #fff;
+        position: relative;
+        overflow:hidden;
+        &.redesigning {
+            background-color: #FFEA00;
+            background-image: url(../img/content-2.PNG);
+            background-position: center;
+             background-repeat: no-repeat;
+        }
+        &.web-development{
+            background-color: #FFEA00;
+            background-image: url(../img/content-2.PNG);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &.web-design{
+            background-color: #FFEA00;
+            background-image: url(../img/content-3.PNG);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &.graphic{
+            background-color: #FFEA00;
+            background-image: url(../img/content-4.PNG);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        figure {
+            position: absolute;
+            width: 100%;
+            bottom: -117%;
+            transition: ease-in-out .5s;
+            background: rgba(0, 0, 0, 0.9);
+            p {
+                padding: 2%;
+                text-align: left;
+                font-family: "Code-Light";
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            .author{
+                padding: 3%;
+                text-align: right;
+                font-family: "Century Gothic";
+                font-size: 10px;
+                span {
+                    color: #FFEA00;
+                }
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &:hover {
+            figure {
+                bottom: 0;
+            }
+        }
+    }
+}

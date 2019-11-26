@@ -357,14 +357,16 @@ header {
   background-image: url("../img/slider_bg.PNG");
   background-size: cover;
   background-position: center; }
-  .slider .carousel-indicators li {
-    width: 15px;
-    height: 15px;
-    border: 2px solid #000;
-    background-color: #000;
-    opacity: 1; }
-    .slider .carousel-indicators li.active {
-      background-color: #FFEA00; }
+  .slider .carousel-indicators {
+    margin-bottom: 2%; }
+    .slider .carousel-indicators li {
+      width: 15px;
+      height: 15px;
+      border: 2px solid #000;
+      background-color: #000;
+      opacity: 1; }
+      .slider .carousel-indicators li.active {
+        background-color: #FFEA00; }
   .slider .carousel-item .margin .text-wrpper {
     padding: 15% 0 5%; }
     .slider .carousel-item .margin .text-wrpper h2 {
@@ -412,3 +414,72 @@ header {
     background-color: #000;
     background-image: url(../img/arrow-left.PNG);
     background-size: auto; }
+
+#content h2 {
+  padding-top: 10%;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center; }
+
+#content p {
+  padding: 5% 5%;
+  font-family: "Century Gothic";
+  font-size: 10px;
+  text-align: center; }
+
+#content .section-box {
+  height: 220px;
+  width: 220px;
+  margin: 5% auto;
+  background: radial-gradient(#6e6e6e, #2f2f2f);
+  background: -webkit-radial-gradient(#6e6e6e, #2f2f2f);
+  background: -moz-radial-gradient(#6e6e6e, #2f2f2f);
+  color: #fff;
+  position: relative;
+  overflow: hidden; }
+  #content .section-box.redesigning {
+    background-color: #FFEA00;
+    background-image: url(../img/content-2.PNG);
+    background-position: center;
+    background-repeat: no-repeat; }
+  #content .section-box.web-development {
+    background-color: #FFEA00;
+    background-image: url(../img/content-2.PNG);
+    background-position: center;
+    background-repeat: no-repeat; }
+  #content .section-box.web-design {
+    background-color: #FFEA00;
+    background-image: url(../img/content-3.PNG);
+    background-position: center;
+    background-repeat: no-repeat; }
+  #content .section-box.graphic {
+    background-color: #FFEA00;
+    background-image: url(../img/content-4.PNG);
+    background-position: center;
+    background-repeat: no-repeat; }
+  #content .section-box figure {
+    position: absolute;
+    width: 100%;
+    bottom: -117%;
+    transition: ease-in-out .5s;
+    background: rgba(0, 0, 0, 0.9); }
+    #content .section-box figure p {
+      padding: 2%;
+      text-align: left;
+      font-family: "Code-Light";
+      font-size: 20px;
+      text-transform: uppercase; }
+    #content .section-box figure .author {
+      padding: 3%;
+      text-align: right;
+      font-family: "Century Gothic";
+      font-size: 10px; }
+      #content .section-box figure .author span {
+        color: #FFEA00; }
+    #content .section-box figure img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  #content .section-box:hover figure {
+    bottom: 0; }
