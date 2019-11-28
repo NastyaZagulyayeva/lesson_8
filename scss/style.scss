@@ -11,14 +11,10 @@ $secondary-color: #414146;
 @font-face {
     font-family: Code;
     src: url(../fonts/CODE_Light.ttf) format("truetype"), url(../fonts/CODE_Light.otf) format("opentype");
-    font-weight: normal;
 }
 
-@font-face {
-    font-family: Code;
-    src: url(../fonts/CODE_Bold.otf) format("opentype");
-    font-weight: bold;
-}
+
+@import './portfolio.scss';
 
 a:focus {
     outline: none;
@@ -45,9 +41,13 @@ header {
         padding-right: 8%;
     }
 
-    .navbar-toggler {
-        border: 2px solid;
-        border-color: rgba(0, 0, 0, 1);
+    .nav-pills {
+        margin-left: 8%;
+
+        .navbar-toggler {
+            border: 2px solid;
+            border-color: rgba(0, 0, 0, 1);
+        }
     }
 
     .navbar-style {
@@ -518,7 +518,7 @@ section {
 
     .owl-carousel {
         padding: 0 38px;
-
+        
         & img {
             width: 138px;
             margin: 0 auto;
@@ -580,7 +580,7 @@ footer {
         font-size: 16px;
     }
 
-    article {
+    section {
         padding: 30px 4px;
     }
 
