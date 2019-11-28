@@ -1,0 +1,112 @@
+
+#portfolio {
+    .top-image {
+        margin-bottom: 35px;
+        background-image: url(../img/slider_bg.PNG);
+
+        .section-title{
+            display: inline-block;
+            margin: 3% 8%;
+            padding: 15px 54px 15px 7px;
+            text-align: left;
+            color: $accent-color;
+            background-color: $secondary-color;
+        }
+    }
+
+    h2 {
+        font-family: "Century Gothic";
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    p {
+        padding: 20px;
+        font-family: "Century Gothic";
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .nav-margin {
+        margin: 3% 0 0 8%;
+
+        .nav-item { 
+            margin: 0 0 10px 5px;
+            font-family: "Century Gothic";
+            font-size: 24px;
+            
+            &:hover {
+                background-color: $accent-color;
+            }
+        }
+
+    }
+
+    .tab-content{
+        margin: 3% 0;
+
+        .gallery_product { 
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            position: relative;
+
+            img { 
+                height: auto;
+                width: 100%;
+                object-fit: cover;
+
+            }
+            
+            .img-overlay {
+                position: absolute;
+                width: calc(100% - 30px);
+                height: 100%;
+                background-color: rgba(255, 255, 0, 0.6);
+                display: none;
+                margin: 0 15px;
+                top: 0;
+                left: 0;
+            }
+
+            &:hover {
+                .img-overlay {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .img-link {
+                        height: 100px;
+                        width: 100px;
+                        background-image:  url("../img/portfolio-page/arrow.PNG");
+                        background-color: rgba(65,65,70, 0.8);
+                        background-size: 50% auto;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            } 
+        
+        }
+
+    }
+
+    @media (min-width: $screen-md-brk) and (max-width: $screen-lg-brk) {
+        .nav-margin {
+            .nav-item { 
+            font-size: 20px;
+            }
+        }
+    }
+
+    @media (max-width: $screen-md-brk) {
+        .nav-margin {
+            .nav-item { 
+            font-size: 15px;
+            }
+        }
+    }
+
+
+}

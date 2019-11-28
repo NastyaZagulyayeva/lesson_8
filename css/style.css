@@ -326,13 +326,80 @@ textarea {
 
 @font-face {
   font-family: Code;
-  src: url(../fonts/CODE_Light.ttf) format("truetype"), url(../fonts/CODE_Light.otf) format("opentype");
-  font-weight: normal; }
+  src: url(../fonts/CODE_Light.ttf) format("truetype"), url(../fonts/CODE_Light.otf) format("opentype"); }
 
-@font-face {
-  font-family: Code;
-  src: url(../fonts/CODE_Bold.otf) format("opentype");
-  font-weight: bold; }
+#portfolio .top-image {
+  margin-bottom: 35px;
+  background-image: url(../img/slider_bg.PNG); }
+  #portfolio .top-image .section-title {
+    display: inline-block;
+    margin: 3% 8%;
+    padding: 15px 54px 15px 7px;
+    text-align: left;
+    color: #FFFF00;
+    background-color: #414146; }
+
+#portfolio h2 {
+  font-family: "Century Gothic";
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center; }
+
+#portfolio p {
+  padding: 20px;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  text-align: center; }
+
+#portfolio .nav-margin {
+  margin: 3% 0 0 8%; }
+  #portfolio .nav-margin .nav-item {
+    margin: 0 0 10px 5px;
+    font-family: "Century Gothic";
+    font-size: 24px; }
+    #portfolio .nav-margin .nav-item:hover {
+      background-color: #FFFF00; }
+
+#portfolio .tab-content {
+  margin: 3% 0; }
+  #portfolio .tab-content .gallery_product {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    position: relative; }
+    #portfolio .tab-content .gallery_product img {
+      height: auto;
+      width: 100%;
+      object-fit: cover; }
+    #portfolio .tab-content .gallery_product .img-overlay {
+      position: absolute;
+      width: calc(100% - 30px);
+      height: 100%;
+      background-color: rgba(255, 255, 0, 0.6);
+      display: none;
+      margin: 0 15px;
+      top: 0;
+      left: 0; }
+    #portfolio .tab-content .gallery_product:hover .img-overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #portfolio .tab-content .gallery_product:hover .img-overlay .img-link {
+        height: 100px;
+        width: 100px;
+        background-image: url("../img/portfolio-page/arrow.PNG");
+        background-color: rgba(65, 65, 70, 0.8);
+        background-size: 50% auto;
+        background-position: center;
+        background-repeat: no-repeat; }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #portfolio .nav-margin .nav-item {
+    font-size: 20px; } }
+
+@media (max-width: 768px) {
+  #portfolio .nav-margin .nav-item {
+    font-size: 15px; } }
 
 a:focus {
   outline: none; }
@@ -352,9 +419,11 @@ header {
   header .navbar {
     padding-left: 8%;
     padding-right: 8%; }
-  header .navbar-toggler {
-    border: 2px solid;
-    border-color: black; }
+  header .nav-pills {
+    margin-left: 8%; }
+    header .nav-pills .navbar-toggler {
+      border: 2px solid;
+      border-color: black; }
   header .navbar-style {
     text-align: center;
     z-index: 1; }
@@ -703,7 +772,7 @@ footer {
     color: #fff;
     font-family: "Century Gothic";
     font-size: 16px; }
-  footer article {
+  footer section {
     padding: 30px 4px; }
   footer a {
     color: #FFFF00; }
