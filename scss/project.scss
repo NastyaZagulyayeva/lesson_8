@@ -1,0 +1,200 @@
+#project {
+    h2 {
+        font-family: "Century Gothic";
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+    } 
+}
+
+.main {
+    h3 {
+        display: inline-block;
+        margin: 24px 0;
+        padding: 5px 10px;
+        font-family: "Century Gothic";
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $accent-color;
+        background-color: $secondary-color;
+    }
+
+    p {
+        font-family: "Century Gothic";
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: $secondary-color;
+    }
+
+
+    .project-gallery {
+        width:100%;
+        ul {
+            list-style: none outside none;
+            padding-left: 0;
+            margin-bottom:0;
+            li {
+                display: block;
+                float: left;
+                margin-right: 6px;
+                cursor:pointer;
+                img {
+                    display: block;
+                    height: auto;
+                    max-width: 65%;
+                    margin: 0 auto;
+
+                }
+            }
+        }
+
+        .lightSlider {
+            &.lSSlide {
+                &.lsGrab {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+
+        .lSPager {
+            &.lSGallery {
+                background-color: $black;
+            }
+        }
+    }
+
+    .project-description{
+        padding-bottom: 8%;
+        border-bottom: 1px solid $secondary-color;
+    }
+
+    .recent_projects {
+
+        .new-projects {
+            display: flex;
+
+            .new-project-img {
+                padding-right: 17px;
+                img {
+                    height: auto;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+} 
+
+.sidebar {
+    .bg-wrapper {
+        padding: 15px 0;
+        background-color: $secondary-color;
+
+        h3 {
+            padding: 15px 21px;
+            font-family: "Century Gothic";
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $accent-color;
+        }
+    }
+
+    .project-details {
+        .details {
+            .detail-item {
+                padding-bottom: 10px;
+
+                a {
+                    display: flex;
+                    width: 90%;
+                    margin: 0 auto;
+                    text-decoration: none;
+                    i {
+                        padding: 2px 7px;
+                        max-height: 33px;
+                        font-size: 25px;
+                        border: 1px solid $accent-color;
+                        background-color: $accent-color;
+                        color: $secondary-color;
+                    }
+                    p {
+                        padding: 7px 0 0 10px;
+                        width: 85%;
+                        font-family: "Century Gothic";
+                        font-size: 16px;
+                        word-spacing: 3px;
+                        text-transform: uppercase;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .populair-posts {
+
+        .posts {
+            width: 90%;
+            margin: 0 auto;
+
+            .post-item {
+                display: flex;
+                padding-bottom: 15px;
+                img {
+                    max-width: 100px;
+                    max-height: 70px;
+                    object-fit: cover;
+                }
+
+                .post-info {
+                    padding-left: 10px;
+                    p {
+                        font-family: "Century Gothic";
+                        font-size: 16px;
+                        word-spacing: 3px;
+                        text-transform: uppercase;
+                        color: $white;
+                    }
+                    .like-count {
+                        display: flex;
+                        padding-top: 8%;
+                        p{
+                            padding-right: 15px;
+                            font-family: "Century Gothic";
+                            font-size: 12px;
+                            color: $accent-color;
+                        }
+                        
+                        i {
+                            font-size: 12px;
+                            color: $accent-color; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tags {
+        .tags-list {
+            width: 90%;
+            margin: 0 auto;
+            .tag {
+                display: inline-block;
+                margin-bottom: 4px;
+                padding: 5px;
+                border: 1 solid $accent-color;
+                background-color: $accent-color;
+                a {
+                    font-family: "Century Gothic";
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color:  $secondary-color;
+                }
+            }
+        }
+    }
+}

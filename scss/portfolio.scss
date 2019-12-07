@@ -1,19 +1,19 @@
 
-#portfolio {
-    .top-image {
-        margin-bottom: 35px;
-        background-image: url(../img/slider_bg.PNG);
+.top-image {
+    margin-bottom: 35px;
+    background-image: url(../img/slider_bg.PNG);
 
-        .section-title{
-            display: inline-block;
-            margin: 3% 8%;
-            padding: 15px 54px 15px 7px;
-            text-align: left;
-            color: $accent-color;
-            background-color: $secondary-color;
-        }
+    .section-title{
+        display: inline-block;
+        margin: 3% 8%;
+        padding: 15px 54px 15px 7px;
+        text-align: left;
+        color: $accent-color;
+        background-color: $secondary-color;
     }
+}
 
+#portfolio {
     h2 {
         font-family: "Century Gothic";
         font-size: 24px;

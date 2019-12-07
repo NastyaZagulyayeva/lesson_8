@@ -328,10 +328,10 @@ textarea {
   font-family: Code;
   src: url(../fonts/CODE_Light.ttf) format("truetype"), url(../fonts/CODE_Light.otf) format("opentype"); }
 
-#portfolio .top-image {
+.top-image {
   margin-bottom: 35px;
   background-image: url(../img/slider_bg.PNG); }
-  #portfolio .top-image .section-title {
+  .top-image .section-title {
     display: inline-block;
     margin: 3% 8%;
     padding: 15px 54px 15px 7px;
@@ -400,6 +400,143 @@ textarea {
 @media (max-width: 768px) {
   #portfolio .nav-margin .nav-item {
     font-size: 15px; } }
+
+#project h2 {
+  font-family: "Century Gothic";
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.main h3 {
+  display: inline-block;
+  margin: 24px 0;
+  padding: 5px 10px;
+  font-family: "Century Gothic";
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFF00;
+  background-color: #414146; }
+
+.main p {
+  font-family: "Century Gothic";
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #414146; }
+
+.main .project-gallery {
+  width: 100%; }
+  .main .project-gallery ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom: 0; }
+    .main .project-gallery ul li {
+      display: block;
+      float: left;
+      margin-right: 6px;
+      cursor: pointer; }
+      .main .project-gallery ul li img {
+        display: block;
+        height: auto;
+        max-width: 65%;
+        margin: 0 auto; }
+  .main .project-gallery .lightSlider.lSSlide.lsGrab {
+    background-color: #414146; }
+  .main .project-gallery .lSPager.lSGallery {
+    background-color: #000000; }
+
+.main .project-description {
+  padding-bottom: 8%;
+  border-bottom: 1px solid #414146; }
+
+.main .recent_projects .new-projects {
+  display: flex; }
+  .main .recent_projects .new-projects .new-project-img {
+    padding-right: 17px; }
+    .main .recent_projects .new-projects .new-project-img img {
+      height: auto;
+      width: 100%;
+      object-fit: cover; }
+
+.sidebar .bg-wrapper {
+  padding: 15px 0;
+  background-color: #414146; }
+  .sidebar .bg-wrapper h3 {
+    padding: 15px 21px;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFF00; }
+
+.sidebar .project-details .details .detail-item {
+  padding-bottom: 10px; }
+  .sidebar .project-details .details .detail-item a {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    text-decoration: none; }
+    .sidebar .project-details .details .detail-item a i {
+      padding: 2px 7px;
+      max-height: 33px;
+      font-size: 25px;
+      border: 1px solid #FFFF00;
+      background-color: #FFFF00;
+      color: #414146; }
+    .sidebar .project-details .details .detail-item a p {
+      padding: 7px 0 0 10px;
+      width: 85%;
+      font-family: "Century Gothic";
+      font-size: 16px;
+      word-spacing: 3px;
+      text-transform: uppercase;
+      color: #FFF; }
+
+.sidebar .populair-posts .posts {
+  width: 90%;
+  margin: 0 auto; }
+  .sidebar .populair-posts .posts .post-item {
+    display: flex;
+    padding-bottom: 15px; }
+    .sidebar .populair-posts .posts .post-item img {
+      max-width: 100px;
+      max-height: 70px;
+      object-fit: cover; }
+    .sidebar .populair-posts .posts .post-item .post-info {
+      padding-left: 10px; }
+      .sidebar .populair-posts .posts .post-item .post-info p {
+        font-family: "Century Gothic";
+        font-size: 16px;
+        word-spacing: 3px;
+        text-transform: uppercase;
+        color: #FFF; }
+      .sidebar .populair-posts .posts .post-item .post-info .like-count {
+        display: flex;
+        padding-top: 8%; }
+        .sidebar .populair-posts .posts .post-item .post-info .like-count p {
+          padding-right: 15px;
+          font-family: "Century Gothic";
+          font-size: 12px;
+          color: #FFFF00; }
+        .sidebar .populair-posts .posts .post-item .post-info .like-count i {
+          font-size: 12px;
+          color: #FFFF00; }
+
+.sidebar .tags .tags-list {
+  width: 90%;
+  margin: 0 auto; }
+  .sidebar .tags .tags-list .tag {
+    display: inline-block;
+    margin-bottom: 4px;
+    padding: 5px;
+    border: 1 solid #FFFF00;
+    background-color: #FFFF00; }
+    .sidebar .tags .tags-list .tag a {
+      font-family: "Century Gothic";
+      font-size: 16px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #414146; }
 
 a:focus {
   outline: none; }

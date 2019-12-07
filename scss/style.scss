@@ -7,6 +7,8 @@ $screen-xl-brk: 1200px;
 
 $accent-color: #FFFF00;
 $secondary-color: #414146;
+$black: #000000;
+$white: #FFF;
 
 @font-face {
     font-family: Code;
@@ -15,6 +17,7 @@ $secondary-color: #414146;
 
 
 @import './portfolio.scss';
+@import './project.scss';
 
 a:focus {
     outline: none;
