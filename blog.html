@@ -10,7 +10,6 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
 
         <title>Skokov</title>
@@ -31,10 +30,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="./portfolio.html">Portfolio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="./blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
@@ -47,11 +46,11 @@
                 </div>
             </nav>
         </header>
-        <section id="project">
+        <section class="blog">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 top-image">
-                        <h2 class="section-title">Project</h2>
+                        <h2 class="section-title">Blog</h2>
                     </div>
                 </div>
             </div>
@@ -59,98 +58,115 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8 order-md-1 main">
-                    <div class="project-gallery">
-                        <ul id="lightSlider">
-                            <li data-thumb="./img/project-page/project-img-1.png">
-                                <img src="./img/project-page/project-img-1.png" />
-                            </li>
-                            <li data-thumb="./img/project-page/project-img-2.png">
-                                <img src="./img/project-page/project-img-2.png" />
-                            </li>
-                            <li data-thumb="./img/project-page/project-img-3.png">
-                                <img src="./img/project-page/project-img-3.png" />
-                            </li>
-                            <li data-thumb="./img/project-page/project-img-4.png">
-                                <img src="./img/project-page/project-img-4.png" />
-                            </li>
-                            <li data-thumb="./img/project-page/project-img-5.png">
-                                <img src="./img/project-page/project-img-5.png" />
-                            </li>
-                            <li data-thumb="./img/project-page/project-img-6.png">
-                                <img src="./img/project-page/project-img-6.png" />
-                            </li>
-                            <li data-thumb="./img/project-page/project-img-1.png">
-                                <img src="./img/project-page/project-img-1.png" />
-                            </li>
-                            <li data-thumb="./img/project-page/project-img-2.png">
-                                <img src="./img/project-page/project-img-2.png" />
-                            </li>
-                            <li data-thumb="./img/project-page/project-img-3.png">
-                                <img src="./img/project-page/project-img-3.png" />
-                            </li>
-                            
-                        </ul>
+                    <div class="blog-container">
+                        <div class="blog-page masonry-block" id="page1">
+                            <div class="grid-sizer"></div>
+                            <div class="grid-item blog-item">
+                                <p class="quote">"Ability may get you to the top, but it takes
+                                    character to keep you there."</p>
+                                <p class="author">John Wooden</p>
+                            </div>
+                            <div class="grid-item blog-item">
+                                <img src="./img/blog-page/img_news_1.png" alt="News">
+                                <h3 class="news-title">17 Inspiring Examples of Parallax Scrolling Sites</h3>
+                                <p class="news-text">When it comes to parallax scrolling, the line that separates good and
+                                    bad choices is pretty thin. A while back parallax was being used to
+                                    deliver an explosion of elements floating around the screen.</p>
+                                <div class="info">
+                                    <i class="fa fa-heart"><span>6</span></i>
+                                    <p>by John Doe / 7 comments / Oct. 10, 2013</p>
+                                </div>
+                            </div>
+                            <div class="grid-item blog-item">
+                                <img src="./img/blog-page/img_news_2.png" alt="News">
+                                <h3 class="news-title">Multipurpose Agency WordPress Theme</h3>
+                                <p class="news-text">At ThemeTrust, our premium WordPress theme shop, we just released
+                                    our latest WordPress theme. Baylie is a multipurpose agency theme
+                                    featuring a full screen parallax slideshow.</p>
+                                <div class="info">
+                                    <i class="fa fa-heart"><span>6</span></i>
+                                    <p>by John Doe / 7 comments / Oct. 10, 2013</p>
+                                </div>
+                            </div>
+                            <div class="grid-item blog-item">
+                                <img src="./img/blog-page/img_news_3.png" alt="News">
+                                <h3 class="news-title">20 Resources for Beginner Designers & Developers</h3>
+                                <p class="news-text">Getting started in the world of design can be both thrilling and
+                                    intimidating. Sometimes, you feel like you just don’t have the tools
+                                    or skills you need to complete even the most basic projects.</p>
+                                <div class="info">
+                                    <i class="fa fa-heart"><span>6</span></i>
+                                    <p>by John Doe / 7 comments / Oct. 10, 2013</p>
+                                </div>
+                            </div>
+                            <div class="grid-item blog-item">
+                                <img src="./img/blog-page/img_news_4.png" alt="News">
+                        
+                                <h3 class="news-title">Inspiring Examples of Color in Web Design</h3>
+                                <p class="news-text">Last week we showcased 13 Beautiful Examples of Bold Colors
+                                    in Web Design and we received several emails asking us to put
+                                    together a list with specific colors.</p>
+                                <div class="info">
+                                    <i class="fa fa-heart"><span>6</span></i>
+                                    <p>by John Doe / 7 comments / Oct. 10, 2013</p>
+                                </div>
+                            </div>
+                            <div class="grid-item blog-item">
+                                <img src="./img/blog-page/img_news_5.png" alt="News">
+                                <h3 class="news-title">18 Minimalistic Home Offices to Inspire You</h3>
+                                <p class="news-text">It doesn’t matter if you work from home or if you use your own space
+                                    only at night or on the weekends, home offices are great! They give
+                                    us a chance to create a space just the way we want it.</p>
+                                <div class="info">
+                                    <i class="fa fa-heart"><span>6</span></i>
+                                    <p>by John Doe / 7 comments / Oct. 10, 2013</p>
+                                </div>
+                            </div>
+                            <div class="grid-item blog-item">
+                                <img src="./img/blog-page/img_news_6.png" alt="News">
+                                <h3 class="news-title">15 Fresh Examples of Clean and Minimal Web Designs</h3>
+                                <p class="news-text">As a designer, it can be tempting to use a lot of unnecessary design
+                                    elements or a complex color palette to make a website stand out.</p>
+                                <div class="info">
+                                    <i class="fa fa-heart"><span>6</span></i>
+                                    <p>by John Doe / 7 comments / Oct. 10, 2013</p>
+                                </div>
+                            </div>
+                            <div class="grid-item blog-item">
+                                <img src="./img/blog-page/img_news_7.png" alt="News">
+                                <h3 class="news-title">15 Websites with Beautiful Typography</h3>
+                                <p class="news-text">We are continuing to see more an more web designers realize the
+                                    importance of typography. And with services like Typekit,
+                                    Google Fonts, and Fontdeck</p>
+                                <div class="info">
+                                    <i class="fa fa-heart"><span>6</span></i>
+                                    <p>by John Doe / 7 comments / Oct. 10, 2013</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-page" id="page2">
+                    
+                        </div>
+                        <div class="page-count">
+                            <a>Prev</a>
+                            <div class="page-number">
+                                <a href="#page1" class="active">1</a>
+                                <a href="#page2">2</a>
+                                <a href="#page3">3</a>
+                                <a href="#page4">4</a>
+                                <a href="#page5">5</a>
+                            </div>
+                            <a>Next</a>
+                        </div>
                     </div>
-                    <article class="project-description">
-                        <h3>Project description</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt
-                            ut laoreet dolore magna aliquam
-                            erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                            lobortis nisl ut aliquip ex ea commodo
-                            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-                            consequat, vel illum dolore eu feugiat nulla facilisis
-                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-                            augue duis dolore te feugait nulla facilisi. Nam
-                            liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                            placerat facer possim assum. Typi non
-                            habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
-                            Investigationes
-                            demonstraverunt lectores legere me lius quod
-                            ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem
-                            consuetudium
-                            lectorum. Mirum est notare quam littera
-                            gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per
-                            seacula
-                            quarta decima et quinta decima.
-                            Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt
-                            ut laoreet dolore magna aliquam
-                            erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                            lobortis nisl ut aliquip ex ea commodo
-                            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-                            consequat, vel illum dolore eu feugiat nulla facilisis
-                            at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-                            augue duis dolore te feugait nulla facilisi. Nam
-                            liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam
-                            erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                            lobortis nisl ut aliquip ex ea commodo
-                            consequat.
-                        </p>
-                    </article>
-                    <section class="recent_projects">
-                        <h3>Recent projects</h3>
-                        <ul class="new-projects">
-                            <li class="new-project-img">
-                                <img src="./img/project-page/project_1.png" alt="Project name">
-                            </li>
-                            <li class="new-project-img">
-                                <img src="./img/project-page/project_2.png" alt="Project name">
-                            </li>
-                            <li class="new-project-img">
-                                <img src="./img/project-page/project_3.png" alt="Project name">
-                            </li>
-                        </ul>
-                    </section>
                 </div>
-
                 <div class="sidebar col-md-4 order-md-2">
+                    <section class="search bg-wrapper">
+                        <form action="/search/" target="_blank" class="form-search">
+                            <input type="text" class="search-bar" name="search" placeholder="Search...">
+                            <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+                        </form>
+                    </section>
                     <section class="project-details bg-wrapper">
                         <h3>Project Details</h3>
                         <ul class="details">
@@ -466,8 +482,8 @@
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script src="https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js"></script>    
-        <script src="./js/project.js"></script>
+            crossorigin="anonymous"></script> 
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>   
+        <script src="./js/blog.js"></script>
     </body>
 </div>

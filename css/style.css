@@ -338,6 +338,11 @@ textarea {
     text-align: left;
     color: #FFFF00;
     background-color: #414146; }
+  .top-image h2 {
+    font-family: "Century Gothic";
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center; }
 
 #portfolio h2 {
   font-family: "Century Gothic";
@@ -401,12 +406,6 @@ textarea {
   #portfolio .nav-margin .nav-item {
     font-size: 15px; } }
 
-#project h2 {
-  font-family: "Century Gothic";
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: center; }
-
 .main h3 {
   display: inline-block;
   margin: 24px 0;
@@ -445,6 +444,8 @@ textarea {
     background-color: #414146; }
   .main .project-gallery .lSPager.lSGallery {
     background-color: #000000; }
+    .main .project-gallery .lSPager.lSGallery li {
+      max-height: 110px; }
 
 .main .project-description {
   padding-bottom: 8%;
@@ -537,6 +538,122 @@ textarea {
       text-transform: uppercase;
       text-decoration: none;
       color: #414146; }
+
+.search .form-search {
+  padding: 0 8%; }
+  .search .form-search .search-bar {
+    margin: 0 auto;
+    width: 100%;
+    height: 28px;
+    padding: 0 20px;
+    border: 1px solid #D0CFCE;
+    border-radius: 50px;
+    outline: none; }
+    .search .form-search .search-bar:focus {
+      border: 1px solid #008ABF;
+      transition: 0.35s ease;
+      color: #008ABF; }
+  .search .form-search .search-icon {
+    position: relative;
+    float: right;
+    width: 45px;
+    height: 45px;
+    top: -36px;
+    right: -2px; }
+
+.blog-container .blog-page .blog-item {
+  background-color: #FFFF00; }
+  .blog-container .blog-page .blog-item .news-title {
+    margin: 15px 15px;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FFFF00; }
+  .blog-container .blog-page .blog-item .news-text {
+    margin: 0 20px;
+    font-family: "Century Gothic";
+    font-size: 12px;
+    color: #5E5E5E; }
+  .blog-container .blog-page .blog-item .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px; }
+    .blog-container .blog-page .blog-item .info p {
+      font-family: "Century Gothic";
+      font-size: 12px;
+      color: #000000; }
+    .blog-container .blog-page .blog-item .info i span {
+      margin: 0 2px;
+      font-family: "Century Gothic";
+      font-size: 12px; }
+  .blog-container .blog-page .blog-item .quote {
+    padding: 2px 15px;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: italic;
+    color: #000000; }
+  .blog-container .blog-page .blog-item .author {
+    float: right;
+    padding: 5px;
+    font-family: "Century Gothic";
+    font-size: 11px;
+    font-style: italic;
+    color: #000000; }
+
+.blog-container .page-count {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #414146; }
+  .blog-container .page-count a {
+    padding: 1%; }
+    .blog-container .page-count a:hover {
+      background-color: #FFFF00; }
+  .blog-container .page-count .page-number {
+    width: 20%;
+    display: flex;
+    justify-content: space-between; }
+    .blog-container .page-count .page-number .active {
+      background-color: #FFFF00;
+      padding: 6% 9%; }
+    .blog-container .page-count .page-number a {
+      padding: 6% 9%;
+      color: #414146;
+      text-decoration: none; }
+      .blog-container .page-count .page-number a:hover {
+        background-color: #FFFF00; }
+
+@media (min-width: 768px) {
+  .blog-container .blog-page .blog-item .news-title {
+    font-size: 24px; }
+  .blog-container .blog-page .blog-item .news-text {
+    font-size: 14px; }
+  .blog-container .blog-page .blog-item .quote {
+    font-size: 24px; }
+  .blog-container .blog-page .info p {
+    font-size: 14px; } }
+
+.masonry-block .grid-sizer,
+.masonry-block .grid-item {
+  width: 74%;
+  margin: 1% 13% 5%; }
+
+.masonry-block .grid-item {
+  float: left; }
+  .masonry-block .grid-item img {
+    display: block;
+    max-width: 100%; }
+
+@media (min-width: 768px) {
+  .masonry-block .grid-sizer,
+  .masonry-block .grid-item {
+    width: 46%;
+    margin: 1% 1% 5%; } }
 
 a:focus {
   outline: none; }
