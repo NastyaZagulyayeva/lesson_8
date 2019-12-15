@@ -7,6 +7,7 @@ $screen-xl-brk: 1200px;
 
 $accent-color: #FFFF00;
 $secondary-color: #414146;
+$gray: #5E5E5E;
 $black: #000000;
 $white: #FFF;
 
@@ -18,6 +19,7 @@ $white: #FFF;
 
 @import './portfolio.scss';
 @import './project.scss';
+@import './blog.scss';
 
 a:focus {
     outline: none;
